@@ -3,88 +3,247 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tennis Traders</title>
+<title>Tennis Trader</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
 }
 
-body {
-    height: 100vh;
-    background: linear-gradient(135deg, #000000, #0f2027);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+body{
+    background: #020617;
+    color:#e2e8f0;
 }
 
-/* Container */
-.container {
-    text-align: center;
-    animation: fadeIn 1.5s ease;
+/* HERO */
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
 }
 
-/* Logo */
-.logo {
-    width: 130px;
-    margin-bottom: 20px;
-    animation: glow 2s infinite alternate;
+/* LOGO */
+.logo img{
+    width:120px;
+    margin-bottom:20px;
+    filter: drop-shadow(0 0 12px rgba(56,189,248,0.5));
 }
 
-/* Channel Name */
-.channel-name {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 25px;
-    letter-spacing: 1px;
+/* BRAND NAME */
+.brand{
+    font-size:30px;
+    font-weight:700;
+    color:#ffffff;
+    margin-bottom:10px;
 }
 
-/* Button */
-.btn {
-    display: inline-block;
-    padding: 14px 35px;
-    background: linear-gradient(45deg, #00ffcc, #00ccff);
-    color: black;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: bold;
-    transition: 0.3s;
+/* TAGLINE */
+.tagline{
+    font-size:15px;
+    color:#94a3b8;
+    margin-bottom:30px;
 }
 
-.btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px #00ffcc;
+/* BUTTON */
+.btn{
+    padding:14px 38px;
+    border-radius:40px;
+    background: linear-gradient(135deg,#22c55e,#4ade80);
+    color:#022c22;
+    font-weight:600;
+    text-decoration:none;
+    transition:0.3s ease;
 }
 
-/* Animations */
-@keyframes fadeIn {
-    from {opacity: 0; transform: translateY(30px);}
-    to {opacity: 1; transform: translateY(0);}
+.btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 30px rgba(34,197,94,0.4);
 }
 
-@keyframes glow {
-    from {filter: drop-shadow(0 0 5px #00ffcc);}
-    to {filter: drop-shadow(0 0 20px #00ffcc);}
+/* SECTION */
+.section{
+    padding:80px 20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+/* TITLE */
+.section h2{
+    text-align:center;
+    font-size:24px;
+    margin-bottom:40px;
+    color:white;
+}
+
+/* CARDS */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#0f172a;
+    padding:25px;
+    border-radius:14px;
+    border:1px solid #1e293b;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    border-color:#22c55e;
+}
+
+/* CARD TEXT */
+.card h3{
+    margin-bottom:10px;
+    color:white;
+}
+
+.card p{
+    color:#94a3b8;
+    font-size:14px;
+}
+
+/* STATS */
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.stat{
+    text-align:center;
+}
+
+.stat h2{
+    color:#22c55e;
+}
+
+/* CTA */
+.cta{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.cta h2{
+    margin-bottom:20px;
+}
+
+/* FOOTER */
+.footer{
+    text-align:center;
+    padding:25px;
+    color:#64748b;
+    border-top:1px solid #1e293b;
 }
 </style>
-
 </head>
 
 <body>
 
-<div class="container">
-    <!-- LOGO -->
-    <img src="logo.png" alt="Logo" class="logo">
+<!-- HERO -->
+<div class="hero">
 
-    <!-- CHANNEL NAME -->
-    <h1 class="channel-name">Tennis Traders</h1>
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+    </div>
 
-    <!-- BUTTON -->
-    <a href="https://t.me/yourlink" class="btn">Join Telegram</a>
+    <div class="brand">Tennis Trader</div>
+
+    <div class="tagline">
+        Premium Match Predictions & Professional Trading Insights
+    </div>
+
+    <a href="https://t.me/+xgt4Qg-J-Vc1NzA1" class="btn">
+        Join Telegram
+    </a>
+
+</div>
+
+<!-- FEATURES -->
+<div class="section">
+
+    <h2>Why Choose Us</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🎯 High Accuracy</h3>
+            <p>Advanced analysis with consistent winning results</p>
+        </div>
+
+        <div class="card">
+            <h3>📊 Data Driven</h3>
+            <p>Deep stats & insights before every match</p>
+        </div>
+
+        <div class="card">
+            <h3>⚡ Fast Updates</h3>
+            <p>Instant tips before match start</p>
+        </div>
+
+        <div class="card">
+            <h3>💰 Smart Strategy</h3>
+            <p>Professional bankroll management system</p>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- STATS -->
+<div class="section">
+
+    <h2>Performance</h2>
+
+    <div class="stats">
+
+        <div class="stat">
+            <h2>92%</h2>
+            <p>Win Rate</p>
+        </div>
+
+        <div class="stat">
+            <h2>8K+</h2>
+            <p>Active Members</p>
+        </div>
+
+        <div class="stat">
+            <h2>400+</h2>
+            <p>Matches Covered</p>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- CTA -->
+<div class="cta">
+
+    <h2>Start Winning Today 🚀</h2>
+
+    <a href="https://t.me/+xgt4Qg-J-Vc1NzA1" class="btn">
+        Join Telegram
+    </a>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    © 2026 Tennis Trader. All rights reserved.
 </div>
 
 </body>
